@@ -1,0 +1,16 @@
+@mixin font($weight, $size, $line-height, $color) {
+  font-weight: $weight;
+  font-size: $size;
+  line-height: $line-height;
+  color: $color;
+}
+@mixin fontName() {
+  font-family: 'Poppins';
+  font-style: normal;
+}
+@mixin brRadius10px() {
+  border-radius: 10px;
+}
+@mixin brRadius40px() {
+  border-radius: 40px;
+}

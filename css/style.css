@@ -1,0 +1,118 @@
+/*** The new CSS Reset - version 1.2.0 (last updated 23.7.2021) ***/
+/* Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property */
+*:where(:not(iframe, canvas, img, svg, video):not(svg *)) {
+  all: unset;
+  display: revert;
+}
+
+/* Preferred box-sizing value */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+  Remove list styles (bullets/numbers)
+  in case you use it with normalize.css
+*/
+ol,
+ul {
+  list-style: none;
+}
+
+/* For images to not be able to exceed their container */
+img {
+  max-width: 100%;
+}
+
+/* Removes spacing between cells in tables */
+table {
+  border-collapse: collapse;
+}
+
+/* Revert the 'white-space' property for textarea elements on Safari */
+textarea {
+  white-space: revert;
+}
+
+.container {
+  font-family: "Poppins";
+  font-style: normal;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(0deg, rgba(80, 178, 234, 0.4), rgba(80, 178, 234, 0.4)), url("../assets/bgs.png");
+  background-position: center;
+  background-size: cover;
+  min-height: 840px;
+}
+.header h2 {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 104.5%;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+.header h2 span {
+  line-height: 104.5%;
+  letter-spacing: 0.7em;
+  font-size: 2rem;
+  display: block;
+}
+.header h1 {
+  text-align: center;
+  font-weight: 800;
+  font-size: 3rem;
+  line-height: 118.5%;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+.header p {
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 157%;
+  color: #ffffff;
+  max-width: 520px;
+  text-align: center;
+  margin-bottom: 27px;
+}
+.header a {
+  font-weight: 700;
+  font-size: 1.125rem;
+  line-height: 62px;
+  color: #ffffff;
+  width: 192px;
+  height: 62px;
+  background: #50b2ea;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.header a:hover {
+  background: #408ebb;
+}
+
+.logo {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding-top: 140px;
+  margin-bottom: 94px;
+}
+
+.header-services {
+  display: flex;
+  gap: 130px;
+  margin-bottom: 50px;
+}
+.header-services img {
+  margin-bottom: 12px;
+}
+.header-services p {
+  font-weight: 700;
+  margin-bottom: 0px;
+}/*# sourceMappingURL=style.css.map */

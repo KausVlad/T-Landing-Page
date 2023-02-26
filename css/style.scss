@@ -1,0 +1,74 @@
+@use '_mixins' as mi;
+@use '_variables' as var;
+@import '_reset';
+
+.container {
+  @include mi.fontName;
+}
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(
+      0deg,
+      rgba(80, 178, 234, 0.4),
+      rgba(80, 178, 234, 0.4)
+    ),
+    url('../assets/bgs.png');
+  background-position: center;
+  background-size: cover;
+  min-height: 840px;
+  h2 {
+    @include mi.font(700, var.$h1-size, 104.5%, var.$color-main-text);
+    text-transform: uppercase;
+    & span {
+      line-height: 104.5%;
+      letter-spacing: 0.7em;
+      font-size: var.$h2-size;
+      display: block;
+    }
+  }
+  h1 {
+    text-align: center;
+    @include mi.font(800, var.$h1-size, 118.5%, var.$color-main-text);
+    margin-bottom: 30px;
+  }
+  p {
+    @include mi.font(600, var.$p-size, 157%, var.$color-main-text);
+    max-width: 520px;
+    text-align: center;
+    margin-bottom: 27px;
+  }
+  a {
+    @include mi.font(700, var.$a-size, 62px, var.$color-main-text);
+    width: 192px;
+    height: 62px;
+    background: var.$color-blue;
+    text-align: center;
+    @include mi.brRadius10px;
+    cursor: pointer;
+    &:hover {
+      background: var.$color-blue-tint;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 14px;
+  justify-content: center;
+  padding-top: 140px;
+  margin-bottom: 94px;
+}
+.header-services {
+  display: flex;
+  gap: 130px;
+  margin-bottom: 50px;
+  img {
+    margin-bottom: 12px;
+  }
+  p {
+    font-weight: 700;
+    margin-bottom: 0px;
+  }
+}
