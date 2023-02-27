@@ -1,0 +1,43 @@
+@use '_mixins' as mi;
+@use '_variables' as var;
+
+.section-service {
+  width: 100%;
+  background: url('../assets/pipe.png'),
+    linear-gradient(
+      to bottom,
+      var.$color-blue 0%,
+      var.$color-blue 57.5%,
+      white 0%,
+      white 100%
+    );
+  background-repeat: repeat-x;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    @include mi.font(700, var.$h1-size, 72px, var.$color-main-text);
+    margin: 50px auto;
+  }
+  a {
+    @include mi.aStyle();
+    @include mi.font(700, var.$a-size, 54px, var.$color-main-text);
+    @include mi.brRadius10px;
+  }
+}
+.service-group {
+  text-align: center;
+  img {
+    margin-bottom: 66px;
+  }
+  h3 {
+    @include mi.font(700, var.$a-size, 22px, var.$color-blue);
+    margin-bottom: 14px;
+  }
+  p {
+    @include mi.font(400, var.$p-size, 22px, var.$color-second-text);
+  }
+  max-width: 999px;
+  gap: 80px;
+  display: flex;
+}
