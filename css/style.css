@@ -293,6 +293,57 @@ textarea {
   width: 114px;
 }
 
+legend {
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 72px;
+  color: #50b2ea;
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+fieldset input {
+  border-radius: 40px;
+  background-color: #50b2ea;
+  height: 64px;
+  width: 370px;
+  padding: 0px 16px;
+  font-weight: 600;
+  font-size: 1.125rem;
+  line-height: 54px;
+  color: #ffffff;
+}
+fieldset input::-moz-placeholder {
+  color: #19435a;
+}
+fieldset input::placeholder {
+  color: #19435a;
+}
+fieldset input[type=submit] {
+  background-color: #50b2ea;
+  width: 148px;
+  text-align: center;
+  font-weight: 700;
+}
+
+.form {
+  height: 520px;
+  background-color: #ffffff;
+}
+
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: #19435a;
+}
+
 .container {
   font-family: "Poppins";
   font-style: normal;

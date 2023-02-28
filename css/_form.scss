@@ -1,0 +1,41 @@
+@use '_mixins' as mi;
+@use '_variables' as var;
+
+legend {
+  @include mi.font(700, var.$h1-size, 72px, var.$color-blue);
+  text-align: center;
+  margin-bottom: 50px;
+  padding-top: 50px;
+}
+fieldset {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  input {
+    @include mi.brRadius40px;
+    background-color: var.$color-blue;
+    height: 64px;
+    width: 370px;
+    padding: 0px 16px;
+    @include mi.font(600, var.$a-size, 54px, var.$color-main-text);
+    &::placeholder {
+      color: var.$color-second-text;
+    }
+    &[type='submit'] {
+      background-color: var.$color-blue;
+      width: 148px;
+      text-align: center;
+      font-weight: 700;
+    }
+  }
+}
+.form {
+  height: 520px;
+  background-color: var.$color-main-text;
+}
+footer {
+  height: 80px;
+  width: 100%;
+  background-color: var.$color-second-text;
+}
