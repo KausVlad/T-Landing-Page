@@ -17,7 +17,7 @@ fieldset {
     background-color: var.$color-blue;
     height: 64px;
     width: 370px;
-    padding: 0px 16px;
+    padding: 0px 32px;
     @include mi.font(600, var.$a-size, 54px, var.$color-main-text);
     &::placeholder {
       color: var.$color-second-text;
@@ -27,6 +27,10 @@ fieldset {
       width: 148px;
       text-align: center;
       font-weight: 700;
+      cursor: pointer;
+      &:hover {
+        background-color: var.$color-blue-tint;
+      }
     }
   }
 }

@@ -2,6 +2,7 @@
 @use '_variables' as var;
 
 .header {
+  padding: 16px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,6 +24,7 @@
       letter-spacing: 0.7em;
       font-size: var.$h2-size;
       display: block;
+      text-align: center;
     }
   }
   h1 {
@@ -53,13 +55,16 @@
 .logo {
   display: flex;
   gap: 14px;
+  flex-wrap: wrap-reverse;
   justify-content: center;
-  padding-top: 140px;
-  margin-bottom: 94px;
+  padding-top: 90px;
+  margin-bottom: 90px;
 }
 .header-services {
   display: flex;
-  gap: 130px;
+  max-width: 566px;
+  width: 100%;
+  justify-content: space-between;
   margin-bottom: 50px;
   img {
     margin-bottom: 12px;
