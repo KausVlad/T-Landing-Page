@@ -120,9 +120,10 @@ textarea {
 
 .section-info {
   width: 100%;
-  background: linear-gradient(to left, #50b2ea 0%, #50b2ea 46.6%, white 0%, white 100%);
+  background: linear-gradient(to left, #50b2ea 0%, #50b2ea 46.9%, white 0%, white 100%);
   display: flex;
   flex-direction: column;
+  padding: 0px 16px;
   padding-top: 100px;
   align-items: center;
 }
@@ -149,10 +150,17 @@ textarea {
   display: flex;
   max-width: 1199px;
   margin: 0 auto;
-  background: linear-gradient(to right, #50b2ea 0%, #50b2ea 54.4%, #f2f2f2 0%, #f2f2f2 100%);
+  background: linear-gradient(to right, #50b2ea 0%, #50b2ea 55%, #f2f2f2 0%, #f2f2f2 100%);
   border: 4px solid white;
   border-radius: 40px;
 }
+.section-content .img-worker {
+  border-radius: 0px 40px 40px 0px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 45%;
+}
+
 .text-content {
   margin: 85px 45px;
 }
