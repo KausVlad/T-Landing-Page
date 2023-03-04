@@ -253,9 +253,10 @@ textarea {
 }
 
 .testimonials {
+  padding: 0px 16px;
   background-color: #50b2ea;
   width: 100%;
-  height: 718px;
+  min-height: 718px;
 }
 .testimonials h1 {
   font-weight: 700;
@@ -273,6 +274,7 @@ textarea {
   gap: 30px 46px;
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
 
 .grid-element {
@@ -288,6 +290,12 @@ textarea {
   border-radius: 50%;
 }
 
+@media screen and (max-width: 899px) {
+  .grid-element {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 .testimonial-text {
   display: flex;
   flex-direction: column;
