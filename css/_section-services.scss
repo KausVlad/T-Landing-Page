@@ -2,6 +2,7 @@
 @use '_variables' as var;
 
 .section-service {
+  padding: 0px 16px;
   width: 100%;
   background: url('../assets/pipe.png'),
     linear-gradient(
@@ -38,6 +39,9 @@
     @include mi.font(400, var.$p-size, 22px, var.$color-second-text);
   }
   max-width: 999px;
-  gap: 80px;
   display: flex;
+  justify-content: space-between;
+}
+.service-element {
+  flex-basis: 190px;
 }
